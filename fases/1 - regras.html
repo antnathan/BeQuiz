@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <script src="../javascript/valoresNew.js"></script>
+    <script src="../javascript/jquery.js"></script>
+    <script src="../javascript/application.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="../css/application.css">
+</head>
+<body onload="totalPerguntas();">
+	<div id="game">
+		<header class="header_game">
+			<div id="voltar" class="buttons">Início</div>
+			<div id="titulos">
+				<div id="titulo1" class="title">Be-Quiz</div>
+			</div>
+			<div class="hud">
+				<img src="img/Moeda.png" alt="moeda"/> 
+				<div class = "hud_itens" id="pontos">0</div>
+				<img src="img/Relógio.png" alt="timer"/> 
+				<div class = "hud_itens" id="timer">01:00</div>
+	       </div>
+       </header>
+       	<div id="titulo4" class="title">
+			Bem-vindos ao Be-Quiz! Este quiz contém <span id="qtdPerguntas"></span> perguntas sobre o behaviorismo e seus estudiosos. Cada pergunta possui apenas uma resposta correta, de quatro alternativas. Cada acerto vale de 100 a 200 pontos, dependendo da dificuldade. Além disso, há um tempo máximo para responder cada pergunta, sendo que o tempo restante será convertido em mais pontos. Quando houver imagens, clique nelas para melhor visualizar, se preferir.
+		</div>
+		<div id="optionsPeq">
+            <div id="fase1" class="buttons">Continuar</div>
+        </div>
+	</div>    
+</body>
+</html>

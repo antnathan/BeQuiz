@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <script src="../javascript/valores.js"></script>
+    <script src="../javascript/valoresNew.js"></script>
+	<script src="../javascript/jquery.js"></script>
+    <script src="../javascript/application.js" type="text/javascript" charset="utf-8" async defer></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/application.css">
+</head>
+<body onload="onLoadPergunta();"> 
+	<div id="game">
+		<header class="header_game">
+			<!-- <div id="voltar" class="buttons">Início</div> -->
+			<div id="titulos">
+				<div id="titulo1" class="title">Be-Quiz</div>
+			</div>
+			<div class="hud">
+				<img src="img/Moeda.png" alt="moeda"/> 
+				<div class = "hud_itens" id="pontos">0</div>
+				<img src="img/Relógio.png" alt="timer"/> 
+				<div class = "hud_itens" id="timer">01:00</div>
+	       </div>
+       </header>
+		<div id="titulos">
+			<div id="pergunta" class="title"></div>	
+		</div>
+		<div id="oculta" style="display:none;"></div>
+		<div id="optionsImagem">
+		    <div id="image" class="imagem"></div>
+		    <div id="img_info" style="display:none">(Clique na imagem para ampliar)</div>
+		</div>
+		<div>
+		    <div id="option1" class="opcoes"></div>
+		    <div id="option2" class="opcoes"></div>
+		    <div id="option3" class="opcoes"></div>
+		    <div id="option4" class="opcoes"></div>
+		</div>
+		<audio id="fail" src="audio/fail.mp3">
+			<p>Seu nevegador não suporta o elemento audio.</p>
+		</audio>
+		<audio id="fail2" src="audio/fail2.mp3">
+			<p>Seu nevegador não suporta o elemento audio.</p>
+		</audio>
+		<audio id="correct" src="audio/correct.mp3">
+			<p>Seu nevegador não suporta o elemento audio.</p>
+		</audio>
+	</div>         
+</body>
+</html>
